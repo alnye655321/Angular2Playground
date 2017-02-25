@@ -9,6 +9,7 @@ import { AppComponent }        from './app.component';
 import { HomeComponent }       from './home.component';
 import { PingComponent }       from './ping.component';
 import { UsersPage }       from './users.component';
+import { UserService }       from './user.service';
 import { routing,
          appRoutingProviders } from './app.routes';
 
@@ -21,7 +22,8 @@ import { routing,
     ],
     providers:    [
         appRoutingProviders,
-        AUTH_PROVIDERS
+        AUTH_PROVIDERS,
+        UserService
     ],
     imports:      [
         BrowserModule,
